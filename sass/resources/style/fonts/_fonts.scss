@@ -4,27 +4,11 @@
   $uri: map-get($entry, "uri");
   /*! #{$type} */
   @font-face {
-    font-family: 'Regular';
-    src: url($uri + "../fonts/peacocksans-regular.woff2") format('woff2'),
-    url($uri + "../fonts/peacocksans-regular.woff") format('woff'),
-    url($uri + "../fonts/peacocksans-regular.ttf") format('ttf'),
+    font-family: '#{$type}';
+    src:
+            url( $uri + ".woff2") format('woff2'),
+            url( $uri + ".woff")  format('woff'),
+            url( $uri + ".ttf")  format('ttf'),
   ;
-  }
-
-    @font-face {
-      font-family: 'Medium';
-      src: url($uri + "../fonts/peacocksans-medium.woff2") format('woff2'),
-      url($uri + "../fonts/peacocksans-medium.woff") format('woff'),
-      url($uri + "../fonts/peacocksans-medium.ttf") format('ttf'),
-    ;
-
-    }
-      @font-face {
-        font-family: 'Bold';
-        src:
-                url( $uri + "../fonts/peacocksans-bold.woff2") format('woff2'),
-                url( $uri + "../fonts/peacocksans-bold.woff")  format('woff'),
-                url( $uri + "../fonts/peacocksans-bold.ttf")  format('ttf'),
-      ;
   }
 }
